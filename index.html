@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        height: 100vh;
+        position: relative;
+      }
+
+      .container {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      h1 {
+        margin-bottom: 40px;
+      }
+
+      .content-container {
+        display: grid;
+        /* border: 2px solid #000; */
+        column-gap: 20px;
+        padding: 20px 20px;
+        row-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      a:link,
+      a:visited {
+        font-size: 24px;
+        border: 2px solid #000;
+        /* padding: 20px 20px; */
+        height: 80px;
+        width: 200px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .component-1 {
+        background-color: #099268;
+      }
+
+      a:hover.component-1 {
+        background-color: #fff;
+        color: #099268;
+        border: 2px solid #099268;
+        font-weight: bold;
+      }
+      .component-2 {
+        background-color: #fab005;
+      }
+
+      a:hover.component-2 {
+        background-color: #fff;
+        color: #fab005;
+        border: 2px solid #fab005;
+        font-weight: bold;
+      }
+      .component-3 {
+        background-color: #1971c2;
+      }
+      a:hover.component-3 {
+        background-color: #fff;
+        color: #1971c2;
+        border: 2px solid #1971c2;
+        font-weight: bold;
+      }
+      .component-4 {
+        background-color: #a61e4d;
+      }
+      a:hover.component-4 {
+        background-color: #fff;
+        color: #a61e4d;
+        border: 2px solid #a61e4d;
+        font-weight: bold;
+      }
+      .component-5 {
+        background-color: #0b7285;
+      }
+      a:hover.component-5 {
+        background-color: #fff;
+        color: #0b7285;
+        border: 2px solid #0b7285;
+        font-weight: bold;
+      }
+      .component-6 {
+        background-color: #5f3dc4;
+      }
+      a:hover.component-6 {
+        background-color: #fff;
+        color: #5f3dc4;
+        border: 2px solid #5f3dc4;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Check components' example</h1>
+      <div class="content-container">
+        <a class="component-1" href="01-accordion.html">01 Accordion</a>
+        <a class="component-2" href="02-carousel.html">02 Carousel</a>
+        <a class="component-3" href="03-table.html">03 Table</a>
+        <a class="component-4" href="04-pagination.html">04 Pagination</a>
+        <a class="component-5" href="05-hero.html">05 Hero</a>
+        <a class="component-6" href="06-app-layout.html">06 App layout</a>
+      </div>
+    </div>
+  </body>
+</html>
